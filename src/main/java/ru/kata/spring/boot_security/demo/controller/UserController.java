@@ -22,6 +22,6 @@ public class UserController {
     @GetMapping
     public String showUserPage(ModelMap model, Principal principal) {
         model.addAttribute("user", userService.findByUsername(principal.getName()));
-        return "users";
+        return "user";
     }
 }
