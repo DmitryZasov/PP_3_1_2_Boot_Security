@@ -32,7 +32,7 @@
             <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <th:block th:if="${#authorization.expression('hasRole(''ROLE_ADMIN'')')}">
                     <a class="nav-link active" id="admin-tab" th:href="@{'/admin'}" role="tab"
-                       aria-controls="admin" aria-selected="true">Admin</a>
+                       aria-controls="admin" aria-selected="true">admin</a>
                     <a class="nav-link" id="user-tab" th:href="@{'/user'}">User</a>
                 </th:block>
             </div>
@@ -182,8 +182,8 @@
                                     <div class="mx-auto text-center" style="width: 300px;">
 
                                         <div class="form-group">
-                                            <label for="firstName" class="form-label"><strong>Name</strong></label>
-                                            <input type="text" class="form-control" id="firstName"
+                                            <label for="Name" class="form-label"><strong>Name</strong></label>
+                                            <input type="text" class="form-control" id="Name"
                                                    th:field="*{username}" placeholder="Name">
                                         </div>
 
